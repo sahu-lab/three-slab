@@ -21,9 +21,11 @@ To reproduce the simulation, do the following:
 ## Simulation with an electric field
 - Create a new folder and copy the contents of the folder `zero_field/dir_ref` into it.
 - To apply a uniform external DC electric field, modify the equilibration scripts (`step6.21_equilibration.mdp` through `step6.40_equilibration.mdp`) and the production script by adding one of the following lines, depending on the desired field direction:
+```
 electric-field-x = 0.03 0 0 0
 electric-field-y = 0.03 0 0 0
 electric-field-z = 0.03 0 0 0
+```
 Here, 0.03 (in V/nm) is shown as an example field strength along the chosen direction. Users may adjust this value according to the desired electric field magnitude.
 - Copy `replica_run.sh` from the `zero_field` directory and adjust the loop range (for i in {001..040}) according to the required number of replicas.
 
