@@ -30,5 +30,5 @@ Here, 0.03 (in V/nm) is shown as an example field strength along the chosen dire
 - Copy `replica_run.sh` from the `zero_field` directory and adjust the loop range (for i in {001..040}) according to the required number of replicas.
 
 
-## Equilibrated files
+# Equilibrated files
 The `equilibrated-tpr-cpt-files` folder contains equilibrated GROMACS run input (`.tpr`) and checkpoint (`.cpt`) files for zero-field DPPC and DOPC lipid bilayer simulations. For both bilayer systems, 40 distinct replicas are provided, with each replica equilibrated for 20 ns.
